@@ -1,0 +1,118 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    height: 50rem;
+    position: relative;
+    
+    
+}
+.card__text{
+    color: white;
+    font-size: 2em;
+    height: 50rem;
+    transition: all 1s ease;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden;
+
+    border-radius: 3px;
+    box-shadow: 0rem 1.5rem 4rem rgb(15, 15, 15,.15);
+}
+
+.card__fontside{
+    background-color: rgb(240, 239, 237);
+}
+.card__BACKside{
+    transform: rotateY(180deg);
+}
+.card__BACKside-1{
+    background-color: #284b85;
+    background-color: linear-gradient(to right bottom, #ffb900, #284b85);
+
+}
+
+.card:hover .card__fontside{
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card__BACKside{
+    transform: rotateY(0deg);
+}
+
+.card-backgoundimage{
+    background-blend-mode: screen;
+    height: 24rem;
+    background-size: cover;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+}
+
+.card-backgoundimage_1{
+    background-image: linear-gradient(to right bottom, rgb(161, 18, 18), rgb(107, 107, 23)),
+     url(image/my.jpg);
+}
+
+.card-hading{
+    font-size: 3.4rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: wheat;
+    width: 40%;
+    top: 12rem;
+    right: 2rem;
+    position: absolute;
+}
+
+.card-span{
+    padding: .8rem 1rem;
+    box-decoration-break: clone;
+    --webkit-box-decoration-break: clone;
+}
+
+.card-span_1{
+    background-image: linear-gradient(to right bottom,  rgba(252, 252, 15, 0.8), rgb(161, 18, 18,.8));
+}
+
+.ditels{
+    padding-top: 2rem;
+   
+}
+.ditels > ul{
+    list-style: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.ditels > ul > li{
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    padding-bottom: .6rem;
+    padding: .3rem;
+}
+
+.ditels > ul > li:not(:last-child){
+    border-bottom: 1px solid rgb(51, 50, 50,.7);
+}
+
+.card-backgoundimage_2{
+    background-image: linear-gradient(to right bottom, rgb(7, 101, 145), rgb(107, 107, 23)),
+     url(image/my1.jpg);
+}
+
+.card-backgoundimage_3{
+    background-image: linear-gradient(to right bottom, rgb(15, 173, 23), rgb(107, 107, 23)),
+     url(image/my10.jpg);
+}
+
+.card-span_2{
+    background-image: linear-gradient(to right bottom,  rgba(12, 55, 247, 0.8), rgb(161, 18, 18,.8));
+}
+
+.card-span_3{
+    background-image: linear-gradient(to right bottom,  rgba(8, 153, 28, 0.8), rgb(161, 18, 18,.8));
+}

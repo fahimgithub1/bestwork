@@ -1,0 +1,34 @@
+.feartur-box{
+    background-color: rgba(218, 230, 220, 0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    border-radius: 2.5px;
+    box-shadow: 0 1.5rem 4rem rgb(209, 191, 191);
+    text-align: center;
+    transition: transiton .3s;
+
+
+}
+
+.feartur-box-icon{
+    font-size: 6rem;
+    margin: 1.5rem 0;
+    display: inline-block;
+    background-image: linear-gradient(
+        to right, rgb(86, 128, 8),
+        rgb(68, 92, 42));
+    --webkit-background-clip: text;
+    // color: transparent;
+}
+
+.feartur-box:hover{
+    transform: translateY(-1.5rem) scale(1.03);
+}
+
+.featur-box-text{
+    padding: 2rem 0;
+}
+
+.row-skew{
+    transform: skewY(7deg);
+}

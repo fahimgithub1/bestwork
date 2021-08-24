@@ -1,0 +1,78 @@
+
+.story{
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgb(109, 102, 91);
+    padding: 6rem;
+    padding-left: 9rem;
+    border-radius: 5rem;
+    font-size: 2rem;
+    margin-bottom: 10rem;
+
+    transform: skewX(-12deg);
+}
+
+.story_shape{
+    background-color: blue;
+    width: 15rem;
+    height: 15rem;
+    float: left;
+
+    transform: translateX(-5rem) skewX(12deg) ;
+    -weebkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+
+}
+
+.story-text > h3{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.story_image{
+    height: 100%;
+    position: relative;
+    transform: translate(-1.5rem) scale(1.1);
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+
+.story-text{
+    transform: skewX(12deg);
+}
+
+.shape_cpaton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: wheat;
+    font-family: 2rem;
+    text-transform: uppercase;
+    transform: translate(-50%, 15%);
+    text-align: center;
+    opacity: 0;
+    transition: all .5s;
+    backface-visibility: hidden;
+}
+
+.story:hover .shape_cpaton{
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+.story:hover .story_image{
+    transform: translate(-1.5rem) scale(1);
+    filter:  blur(2px) brightness(65%);
+}
+
+.story-btn{
+    width: 20%;
+    margin: 0 auto;
+}
+
+.story-btn > .btn-text{
+    font-size: 2rem;
+}
+
